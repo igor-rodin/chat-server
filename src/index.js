@@ -123,7 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
           })
             .then((res) => res.json())
             .then(({ image }) => {
-              console.log('image', image);
               activeUser.avatar = image;
               avatarLink.querySelector('#activeUserImg').src = activeUser.avatar;
               syncAvatar(activeUser.avatar);
